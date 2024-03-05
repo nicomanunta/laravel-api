@@ -28,7 +28,7 @@ class UpdateProjectRequest extends FormRequest
             'descrizione' => 'required|string',
             'type_id' => 'nullable|exists:types,id',
             'data' => 'required|date',
-            'cover_immagine' => 'required'
+            'cover_immagine' => 'nullable',
 
         ];
     }
@@ -42,7 +42,7 @@ class UpdateProjectRequest extends FormRequest
             'type_id.exists' => 'La categoria selelzionata non esiste',
             'data.required'=> 'Data obbligatoria',
             'data.date'=> 'Deve essere una data valida',
-            'cover_immagine.required'=> 'Immagine obbligatorio',
+            
             
         ];
     }
