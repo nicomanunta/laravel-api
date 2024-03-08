@@ -24,7 +24,7 @@ class ProjectController extends Controller
         $project = Project::with('type', 'technologies')->where('slug', $slug)->first();
 
         return response()->json([
-            'succes' => true,
+            'success' => true,
             'project' => $project,
         ]);
     }
