@@ -4,5 +4,6 @@
     Nome:{{$lead->name}} <br>
     Cognome: {{$lead->surname}} <br>
     Email: {{$lead->email}} <br>
+    Numero di telefono: {{$lead->phone}} <br>
     Messaggio: {{$lead->message}} <br>
 </p>
